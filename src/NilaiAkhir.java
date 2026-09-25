@@ -29,8 +29,9 @@ public class NilaiAkhir {
          */
 
         // Satu ekspresi tanpa kurung sama sekali.
-        // Ini aman karena * dikerjakan lebih dulu daripada + (operator precedence),
-        // jadi urutan operasinya sudah otomatis benar tanpa perlu kurung.
+// Ini aman karena operator * memiliki precedence lebih tinggi daripada +,
+// sehingga Java otomatis mengerjakan semua perkalian (nilai * bobot) lebih dulu
+// sebelum menjumlahkannya. Urutan ini sudah benar tanpa perlu kurung tambahan.
         double akhir = praktikum * BOBOT_PRAKTIKUM + tugas * BOBOT_TUGAS + mid * BOBOT_MID;
         akhir += nilaiFinal * BOBOT_FINAL; // augmented assignment untuk komponen final
 
